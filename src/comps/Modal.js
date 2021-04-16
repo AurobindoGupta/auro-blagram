@@ -20,6 +20,7 @@ const Modal = ({selectedImg,setSelectedImg}) => {
             animate={{y: 0 }}
             transition={{delay: 0.5}}
             />
+            <button>delete</button>
         </motion.div>
     )
 } 
