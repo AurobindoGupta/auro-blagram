@@ -4,6 +4,9 @@ import useStorage from '../hooks/useFirestore';
 import {projectStorage,projectFirestore,timeStamp} from '../firebase/config';
 import IconButton from '@material-ui/core/IconButton';
 import DeleteIcon from '@material-ui/icons/Delete';
+import Button from '@material-ui/core/Button';
+import Icon from '@material-ui/core/Icon';
+
 
 const collectionRef = projectFirestore.collection('images');
 const Modal = ({selectedImg,setSelectedImg}) => {
@@ -31,9 +34,14 @@ const Modal = ({selectedImg,setSelectedImg}) => {
             animate={{y: 0 }}
             transition={{delay: 0.5}}
             />
-            <IconButton aria-label="delete" disabled color="secondary" onClick={deleteButtonHandler}>
-             <DeleteIcon />
-                </IconButton>
+            <Button variant="contained"
+        color="secondary"
+        className="eBut"
+        startIcon={<DeleteIcon />}
+        onClick={deleteButtonHandler}
+      >
+        Delete
+      </Button>
             
              </motion.div>
     )
