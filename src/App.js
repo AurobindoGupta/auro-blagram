@@ -4,6 +4,7 @@ import Modal from './comps/Modal';
 import Title from './comps/Title';
 import UploadForm from './comps/UploadForm';
 
+
 function App() {
 const [selectedImg,setSelectedImg]= useState(null);
 
@@ -13,6 +14,7 @@ const [selectedImg,setSelectedImg]= useState(null);
       <UploadForm/>
       <ImageGrid setSelectedImg = {setSelectedImg}/>
       { selectedImg && <Modal selectedImg= {selectedImg} setSelectedImg = {setSelectedImg}/>}
+      
     </div>
   );
 }

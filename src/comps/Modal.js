@@ -1,12 +1,19 @@
 import React from 'react';
 import {motion} from 'framer-motion';
 
+
+
 const Modal = ({selectedImg,setSelectedImg}) => {
+    
 
     const handleClick =(e) =>{
         if(e.target.classList.contains('backdrop')){
         setSelectedImg(null);
         }
+    }
+    const deleteButtonHandler = () =>{
+     
+
     }
     return (
         <motion.div className = "backdrop" onClick={handleClick}
@@ -20,7 +27,7 @@ const Modal = ({selectedImg,setSelectedImg}) => {
             animate={{y: 0 }}
             transition={{delay: 0.5}}
             />
-            <button>delete</button>
+            <button onClick={{deleteButtonHandler}}>delete</button>
         </motion.div>
     )
 } 
