@@ -1,5 +1,6 @@
 import React from 'react';
 import {motion} from 'framer-motion';
+import useStorage from '../hooks/useFirestore'
 
 
 
@@ -12,7 +13,8 @@ const Modal = ({selectedImg,setSelectedImg}) => {
         }
     }
     const deleteButtonHandler = () =>{
-     
+    
+
 
     }
     return (
