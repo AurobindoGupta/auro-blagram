@@ -38,6 +38,7 @@ const Modal = ({selectedImg,setSelectedImg}) => {
         color="secondary"
         className="eBut"
         startIcon={<DeleteIcon />}
+        style={{backgroundColor:"red"}}
         onClick={deleteButtonHandler}
       >
         Delete
