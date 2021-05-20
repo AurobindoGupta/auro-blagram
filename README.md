@@ -1,3 +1,12 @@
+*About
+
+this is a picture gallery app made using React js, HTML, CSS
+this app was designed using Material UI.
+it uses firestore as a database.
+we can add images, delete the and view them.
+the link to the deployed app is https://auro-blagram.web.app/ 
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
