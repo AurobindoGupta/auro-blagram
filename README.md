@@ -1,4 +1,4 @@
-#####Photo Gallery App
+#####Photo Gallery App <br/>
 [DEMO](https://auro-blagram.web.app/)
 ***
 
